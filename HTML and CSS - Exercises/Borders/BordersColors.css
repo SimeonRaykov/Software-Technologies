@@ -1,0 +1,22 @@
+#Blue {color:blue}
+#Red {color:red}
+#Green {color:green}
+
+.Red1{
+    border:solid 1px red;
+    border-radius: 7px;
+    text-align:center;
+    background-color:grey;
+}
+.Green1{
+    border:solid 1px green;
+    border-radius:7px;
+    text-align:center;
+    background-color:grey;
+}
+.Blue1{
+    border:solid 1px blue;
+    border-radius:7px;
+    text-align:center;
+    background-color:grey;
+}
