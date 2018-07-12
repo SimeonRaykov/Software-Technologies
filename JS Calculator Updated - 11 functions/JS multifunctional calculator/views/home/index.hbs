@@ -1,0 +1,67 @@
+<div class="container body-content span=8 offset=2">
+    <div class="well">
+        <form class="form-inline" method="POST">
+            <fieldset>
+                <div class="form-group">
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" id="leftOperand" placeholder="Left Operand"
+                    name="calculator[leftOperand]" value="{{calculator.leftOperand}}">
+                </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-4">
+                        <select class="form-control" name="calculator[operator]">
+                            <option value="+"{{selectif calculator.operator '+'}}>+</option>
+                            <option value="-"{{selectif calculator.operator '-'}}>-</option>
+                            <option value="*"{{selectif calculator.operator '*'}}>*</option>
+                            <option value="/"{{selectif calculator.operator '/'}}>/</option>
+                            <option value="^"{{selectif calculator.operator '^'}}>^</option>
+                            <option value="%"{{selectif calculator.operator '%'}}>%</option>
+                            <option value="log"{{selectif calculator.operator 'log'}}>log</option>
+                            <option value="log2"{{selectif calculator.operator 'log2'}}>log2</option>
+                            <option value="log10"{{selectif calculator.operator 'log10'}}>log10</option>
+                            <option value="Binary"{{selectif calculator.operator 'Binary'}}>Binary</option>
+                            <option value="Hexadecimal"{{selectif calculator.operator 'Hexadecimal'}}>Hex</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="rightOperand" placeholder="Right Operand"
+                        name="calculator[rightOperand]" value="{{calculator.rightOperand}}">
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-2">
+                        <p>=</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="result" placeholder="Result"
+                        name="result" value="{{result}}" readonly >
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-4">
+<button type="submit" class="btn btn-primary">
+Calculate
+</button>
+
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+</div>
+<i>  <font size="6">If you use one of the following : log, log2, log10, Binary or Hex do not write a second number.</font></i>
